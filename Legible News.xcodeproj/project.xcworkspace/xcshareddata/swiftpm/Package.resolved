@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "navigationbackport",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/johnpatrickmorgan/NavigationBackport.git",
+      "state" : {
+        "revision" : "b46d9005faaddce5f5977a3507c2f024b375b30d",
+        "version" : "0.3.2"
+      }
+    },
+    {
+      "identity" : "turbo-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hotwired/turbo-ios",
+      "state" : {
+        "branch" : "main",
+        "revision" : "2ace9ebe01fe3bce3e7e8df38cb82df052493663"
+      }
+    }
+  ],
+  "version" : 2
+}
