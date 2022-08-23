@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/johnpatrickmorgan/NavigationBackport.git",
       "state" : {
-        "revision" : "b46d9005faaddce5f5977a3507c2f024b375b30d",
-        "version" : "0.3.2"
+        "branch" : "main",
+        "revision" : "b46d9005faaddce5f5977a3507c2f024b375b30d"
       }
     },
     {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11A825BB28B4B884003A244C /* NavigationBackport in Frameworks */ = {isa = PBXBuildFile; productRef = 11A825BA28B4B884003A244C /* NavigationBackport */; };
 		11B369B728B497CC00F662EC /* Legible_NewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B369B628B497CC00F662EC /* Legible_NewsApp.swift */; };
 		11B369B928B497CC00F662EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B369B828B497CC00F662EC /* ContentView.swift */; };
 		11B369BB28B497CD00F662EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11B369BA28B497CD00F662EC /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 			files = (
 				11B369E528B49B1600F662EC /* NavigationBackport in Frameworks */,
 				11B369E228B4985400F662EC /* Turbo in Frameworks */,
+				11A825BB28B4B884003A244C /* NavigationBackport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +154,7 @@
 			packageProductDependencies = (
 				11B369E128B4985400F662EC /* Turbo */,
 				11B369E428B49B1600F662EC /* NavigationBackport */,
+				11A825BA28B4B884003A244C /* NavigationBackport */,
 			);
 			productName = "Legible News";
 			productReference = 11B369B328B497CC00F662EC /* Legible News.app */;
@@ -228,6 +231,7 @@
 			packageReferences = (
 				11B369E028B4985400F662EC /* XCRemoteSwiftPackageReference "turbo-ios" */,
 				11B369E328B49B1600F662EC /* XCRemoteSwiftPackageReference "NavigationBackport" */,
+				11A825B928B4B884003A244C /* XCRemoteSwiftPackageReference "NavigationBackport" */,
 			);
 			productRefGroup = 11B369B428B497CC00F662EC /* Products */;
 			projectDirPath = "";
@@ -597,6 +601,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		11A825B928B4B884003A244C /* XCRemoteSwiftPackageReference "NavigationBackport" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnpatrickmorgan/NavigationBackport.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		11B369E028B4985400F662EC /* XCRemoteSwiftPackageReference "turbo-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hotwired/turbo-ios";
@@ -616,6 +628,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		11A825BA28B4B884003A244C /* NavigationBackport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11A825B928B4B884003A244C /* XCRemoteSwiftPackageReference "NavigationBackport" */;
+			productName = NavigationBackport;
+		};
 		11B369E128B4985400F662EC /* Turbo */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 11B369E028B4985400F662EC /* XCRemoteSwiftPackageReference "turbo-ios" */;
