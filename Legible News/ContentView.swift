@@ -22,17 +22,17 @@ struct TurboNavigationStack: View {
 struct ContentView: View {
     var body: some View {
         TabView {
-            TurboNavigationStack(initialUrl: "http://localhost:6090/")
+            TurboNavigationStack(initialUrl: "https://legiblenews.com/")
                 .tabItem {
                     Image(systemName: "newspaper")
                     Text("Today")
                 }
-            TurboNavigationStack(initialUrl: "http://localhost:6090/week")
+            TurboNavigationStack(initialUrl: "https://legiblenews.com/week")
                 .tabItem {
                     Image(systemName: "calendar")
                     Text("Week")
                 }
-            TurboNavigationStack(initialUrl: "http://localhost:6090/archives")
+            TurboNavigationStack(initialUrl: "https://legiblenews.com/archives")
             .tabItem {
                 Image(systemName: "clock")
                 Text("Time Machine")
