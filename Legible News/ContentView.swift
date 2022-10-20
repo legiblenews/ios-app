@@ -19,6 +19,13 @@ struct TurboNavigationStack: View {
     }
 }
 
+class TurboVisitableViewController: VisitableViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .clear
+    }
+}
+
 struct ContentView: View {
     var body: some View {
         TabView {
@@ -61,7 +68,7 @@ struct TurboView: UIViewControllerRepresentable {
     let url: String
 
     func makeUIViewController(context: Context) -> VisitableViewController {
-        let viewController = VisitableViewController(url: URL(string: url)!)
+        let viewController = TurboVisitableViewController(url: URL(string: url)!)
         session.visit(viewController)
         return viewController
     }
@@ -111,6 +118,7 @@ class SessionWrapper: ObservableObject, SessionDelegate {
     }
     
     func sessionWebViewProcessDidTerminate(_ session: Turbo.Session) {
+        session.reload()
     }
     
     func session(_ session: Turbo.Session, didFailRequestForVisitable visitable: Turbo.Visitable, error: Error) {
