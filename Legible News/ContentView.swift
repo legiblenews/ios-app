@@ -29,22 +29,26 @@ class TurboVisitableViewController: VisitableViewController {
 struct ContentView: View {
     var body: some View {
         TabView {
-            TurboNavigationStack(initialUrl: "https://legiblenews.com/")
+            TurboNavigationStack(initialUrl: url(path: "/"))
                 .tabItem {
                     Image(systemName: "newspaper")
                     Text("Today")
                 }
-            TurboNavigationStack(initialUrl: "https://legiblenews.com/week")
+            TurboNavigationStack(initialUrl: url(path: "/week"))
                 .tabItem {
                     Image(systemName: "calendar")
                     Text("Week")
                 }
-            TurboNavigationStack(initialUrl: "https://legiblenews.com/archives")
+            TurboNavigationStack(initialUrl: url(path: "/archives"))
             .tabItem {
                 Image(systemName: "clock")
                 Text("Time Machine")
             }
         }
+    }
+    
+    func url(path: String) -> String {
+        Environment.getRootURL().absoluteString
     }
 }
 
@@ -100,7 +104,7 @@ class SessionWrapper: ObservableObject, SessionDelegate {
     
     func makeSession() -> Session {
         let configuration = WKWebViewConfiguration()
-        configuration.applicationNameForUserAgent = "Turbo iOS"
+        configuration.applicationNameForUserAgent = Environment.userAgent()
         configuration.processPool = Self.sharedProcessPool
 
         let session = Session(webViewConfiguration: configuration)
