@@ -39,7 +39,7 @@ struct ContentView: View {
                     Image(systemName: "calendar")
                     Text("Week")
                 }
-            TurboNavigationStack(initialUrl: url(path: "/archives"))
+            TurboNavigationStack(initialUrl: url(path: "/time-machine"))
             .tabItem {
                 Image(systemName: "clock")
                 Text("Time Machine")
@@ -48,7 +48,7 @@ struct ContentView: View {
     }
     
     func url(path: String) -> String {
-        Environment.getRootURL().absoluteString
+        Environment.getRootURL().appendingPathComponent(path).absoluteString
     }
 }
 
