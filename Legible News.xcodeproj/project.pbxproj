@@ -39,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		11527C5828B4A2E7004C5BA2 /* Legible-News-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Legible-News-Info.plist"; sourceTree = SOURCE_ROOT; };
+		117273D02A58A12200B12C5F /* Legible News.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Legible News.entitlements"; sourceTree = "<group>"; };
 		11B369B328B497CC00F662EC /* Legible News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Legible News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B369B628B497CC00F662EC /* Legible_NewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legible_NewsApp.swift; sourceTree = "<group>"; };
 		11B369B828B497CC00F662EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +105,7 @@
 		11B369B528B497CC00F662EC /* Legible News */ = {
 			isa = PBXGroup;
 			children = (
+				117273D02A58A12200B12C5F /* Legible News.entitlements */,
 				11527C5828B4A2E7004C5BA2 /* Legible-News-Info.plist */,
 				11B369B628B497CC00F662EC /* Legible_NewsApp.swift */,
 				11B369B828B497CC00F662EC /* ContentView.swift */,
@@ -444,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Legible News/Legible News.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Legible News/Preview Content\"";
@@ -463,6 +466,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.legiblenews.LegibleNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -474,6 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Legible News/Legible News.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Legible News/Preview Content\"";
@@ -493,6 +500,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.legiblenews.LegibleNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
